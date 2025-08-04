@@ -56,7 +56,7 @@ def test():
 
     solution = Solution()
     assert solution.twoSum(numbers, target) == [4, 5]
-    
+
     # Тест
     # проверка случая, когда два одинаковых числа дают нужную сумму
     #
@@ -82,7 +82,7 @@ def test():
 
     solution = Solution()
     assert solution.twoSum(numbers, target) == [3, 4]
-    
+
     # Тест
     # перебор до середины (четное число элементов)
     #
@@ -108,6 +108,20 @@ def test():
 
     solution = Solution()
     assert solution.twoSum(numbers, target) == [1, 4]
+
+    # Граничные значения
+    numbers = [-1000, 999, 1000]
+    target = 0  # Проверка минимальных/максимальных значений
+
+    solution = Solution()
+    assert solution.twoSum(numbers, target) == [1, 3]
+
+    # Большой массив (проверка эффективности)
+    numbers = list(range(1, 30001))
+    target = 59999  # 29999 + 30000
+
+    solution = Solution()
+    assert solution.twoSum(numbers, target) == [29999, 30000]
 
 
 if __name__ == "__main__":
