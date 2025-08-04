@@ -20,11 +20,12 @@ class Solution:
             так как будто нумерация массива начинается с 1-го.
 
         Examples:
-            >>> twoSum([2, 7, 11, 15], 9)
+            >>> solution = Solution()
+            >>> solution.twoSum([2, 7, 11, 15], 9)
             [1, 2]
-            >>> twoSum([2, 3, 4], 6)
+            >>> solution.twoSum([2, 3, 4], 6)
             [1, 3]
-            >>> twoSum([-1, 0], -1)
+            >>> solution.twoSum([-1, 0], -1)
             [1, 2]
         """
         # Инициализация двух указателей
